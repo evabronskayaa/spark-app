@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "your-project"
+name = "spark-app"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <your.email@example.com>"]
+authors = ["Eva Bronzskaya <evabronskayaa@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
