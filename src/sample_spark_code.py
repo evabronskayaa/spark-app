@@ -39,4 +39,4 @@ df.filter(df.age > 27).show()
 print("\nSorting by age:")
 df.orderBy("age").show()
 
-# spark.stop()
+spark.stop()
