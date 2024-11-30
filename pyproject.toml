@@ -2,7 +2,7 @@
 name = "spark-app"
 version = "0.1.0"
 description = ""
-authors = ["Eva Bronzskaya <evabronskayaa@gmail.com>"]
+authors = ["Eva Bronskaya <evabronskayaa@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
