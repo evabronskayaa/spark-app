@@ -12,10 +12,10 @@ The cluster consists of one master node, two worker nodes and a separate contain
 docker compose up -d 
 ```
 
-## Run python code in spark-master container
+## Run python code in spark-app / spark-master container
 
 ```bash
-docker exec -it spark-master bash
+docker exec -it <CONTAINER_NAME> bash
 
 # interactive mode
 cd /opt/spark/bin
