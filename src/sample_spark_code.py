@@ -9,7 +9,6 @@ time.sleep(10)
 spark = (
     SparkSession.builder.appName("spark-test-app")
     .master("spark://spark-master:7077")
-    .config("spark.driver.host", "spark-app")
     .getOrCreate()
 )
 
