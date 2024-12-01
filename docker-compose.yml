@@ -64,6 +64,25 @@ services:
     user: "root"
     command: ["bash", "/scripts/submit.sh"]
 
+  jupyter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: jupyter-spark
+    depends_on:
+      - spark-master
+    ports:
+      - "8888:8888"
+    env_file: .env
+    volumes:
+      - ./:/opt/spark/work-dir
+      - ./.sh:/scripts
+    environment:
+      - SPARK_MASTER=spark://spark-master:7077
+      - PYTHONPATH=/opt/venv/lib/python3.*/site-packages
+    user: "root"
+    command: ["jupyter", "lab", "--ip=0.0.0.0", "--allow-root", "--NotebookApp.token=''"]
+
 volumes:
   spark-logs:
   spark-work:

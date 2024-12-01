@@ -12,7 +12,7 @@ The cluster consists of one master node, two worker nodes and a separate contain
 docker compose up -d 
 ```
 
-## Run python code in spark-app / spark-master container
+## Run python code in spark-master container
 
 ```bash
 docker exec -it <CONTAINER_NAME> bash
@@ -25,3 +25,7 @@ cd /opt/spark/bin
 cd /opt/spark/work-dir
 python3 src/your_script.py
 ```
+
+### Using jupyterlab
+
+<b>Web UI: http://localhost:8888/lab/</b>
