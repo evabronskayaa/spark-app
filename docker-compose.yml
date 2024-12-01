@@ -72,7 +72,7 @@ services:
     depends_on:
       - spark-master
     ports:
-      - "8888:8888"
+      - "${JUPYTER_EXTERNAL_PORT}:8888"
     env_file: .env
     volumes:
       - ./:/opt/spark/work-dir
